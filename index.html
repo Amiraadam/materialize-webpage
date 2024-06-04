@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<d>, initial-scale=1.0">
+    <title>{{user .fullName}}'s webpage</title>
+    <link rel="stylesheet" href="./materialize.css">
+</head>
+<style>
+    img { 
+        width: 100%;
+    }
+    
+    body {
+
+       background-color:lavenderblush;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div clas="col s12 m6">
+                <h1>{{user.fullName}}</h1>
+            </div>
+            <div class="col s12 m6">
+                <img src="{{user.photo}}" alt="User.photo">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m6">
+                <h3>{{city.name}}</h3>
+            </div>
+            <div class="col s12 m6">
+                <img src="{{city.photo}}" alt="{{city.name}} photo">
+                <p class="col l12 {{this.position}}">{{city.description}}</p>
+            </div>
+        </div>
+
+
+        <h3>Foreign Language</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>English</th>
+                    <th>Spanish</th>
+                </tr>
+              </thead>
+            <tbody>
+                {{#each foreignLanguage.phrases}}
+            <tr>
+                <td>{{this.englishPhrase}}</td>
+                <td>{{this.foreignLanguage}}</td>
+            </tr>
+            {{/each}}
+            </tbody>
+        </table>
+
+        <h3>favourite Subjects</h3>
+        <div class="row">
+            {{#each favouriteSubjects}}
+            <div class="col s12 m4">
+                <h5>{{this.name}}</h5>
+                <p style="font-size: smaller">{{this.description}}</p>
+                <img src="{{this.photo}}" alt="{{this.name}} photo">
+            </div>
+            {{/each}}
+        </div>
+
+        <h3>Historic Places</h3>
+        <div class="row">
+            {{#each historicPlaces}}
+            <div class="col s12 m4 l4">
+                <h5>{{this.name}}</h5>
+
+                <div class="col s6 l12 {{this.position}}"><p>{{this.description}}</p></div>
+                <div class="col s6 l12">
+                    <img src="{{this.photo}}" alt="{{this.name}} photo">
+
+                </div>
+
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</body>
+</html>

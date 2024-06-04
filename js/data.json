@@ -1,0 +1,58 @@
+{
+    "user" : {
+        "fullName": "Amira Ada Badr",
+        "photo" : "./Amira Adam.jpg"
+    },
+    "city" : {
+        "name" : "Tokyo",
+        "photo" : "./Tokyo.jpg",
+        "description" : "I would like to visit Tokyo because of its unique blend of traditional and modern culture, amazing food, and stunning architecture.",
+        "position" : "left"
+    },
+    "foreignLanguage" : {
+        "language" : "Spanish",
+        "phrases" : [{
+            "englishPhrase" : "Hello",
+            "foreignLanguage" : "Hola"
+        },
+        {
+            "englishPhrase" : "Thank you",
+            "foreignLanguage" : "Gracias"
+        }]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "Machine Learning",
+            "description" : "Machine Learning is a branch of artificial intelligence that focuses on developing algorithms and models that enable computers to learn from and make predictions or decisions based on data, without being explicitly programmed.",
+            "photo" : "./machine learning.jpg"
+        },
+        {
+            "name" : "Full Stack Development",
+            "description" : "The process of creating web applications from scratch, including database management, server-side operations, client-side programming, and user interface design, is known as full stack development.",
+            "photo" : "./Full Stack Web Development.jpg"
+        },
+        {
+            "name" : "Engineering Business",
+            "description" : "Engineering Business Systems integrates engineering principles with business and information systems to optimize organizational processes and improve efficiency and decision-making.",
+            "photo" : "./Engineering Business Systems.jpg"
+        }
+    ],
+    "historicPlaces" : [
+        {
+            "name" : "Constitution Hill",
+            "description" : "It housed political activists like Nelson Mandela, Gandhi, and Winnie Madikizela-Mandela.",
+            "photo" : "./Constitution Hill.jpg"
+        },
+        {
+            "name" : "Apartheid Museum",
+            "description" : "Apartheid Museum features interactive exhibits, including personal accounts and artifacts.",
+            "photo" : "./Apartheid Museum.jpg",
+            "position": "right"
+        },
+        {
+            "name" : "Cradle of Humankind",
+            "description" : "It's home to the Sterkfontein Caves, where the famous Mrs. Ples and Little Foot fossils were found.",
+            "photo" : "./Cradle of Humankind.jpg"
+        } 
+    ]
+}
