@@ -83,13 +83,19 @@
             {{#each historicPlaces}}
             <div class="col s12 m4 l4">
                 <h5>{{this.name}}</h5>
-
-                <div class="col s6 l12 {{this.position}}"><p>{{this.description}}</p></div>
-                <div class="col s6 l12">
+                {{#if this.position}}
+                <div class="col s6 l6 {{this.position}}"><p>{{this.description}}</p></div>
+                <div class="col s6 l6">
                     <img src="{{this.photo}}" alt="{{this.name}} photo">
 
                 </div>
 
+                {{else}}
+                <div class="col s6 l6 push-l6"><p>{{this.description}}</p></div>
+                <div class="col s6 l6 pull-l6">
+                    <img src="{{this.photo}}" alt="{{this.name}} photo">
+                </div>
+                {{/if}}
             </div>
             {{/each}}
         </div>
