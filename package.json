@@ -25,7 +25,8 @@
   "contributors": [],
   "scripts": {
     "dev": "vite",
-    "test": ""
+    "test": "",
+    "build": "vite build"
   },
   "devDependencies": {
     "vite": "^5.2.12",
