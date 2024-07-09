@@ -24,7 +24,7 @@
         {
             "name" : "Machine Learning",
             "description" : "Machine Learning is a branch of artificial intelligence that focuses on developing algorithms and models that enable computers to learn from and make predictions or decisions based on data, without being explicitly programmed.",
-            "photo" : "./machine learning.jpg"
+            "photo" : "./machinelearning.jpg"
         },
         {
             "name" : "Full Stack Development",
